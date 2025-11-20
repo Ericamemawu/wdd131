@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Ho</title>
+    <meta name="description" content="A page about the Volta Regionof Ghana with weather and general information.">
+    <meta name="author" content="Amemawu Eric">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ho ,Ghana</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/salta-hero-large.webp">
+            <source media="(min-width: 500px )" srcset="images/salta-hero-medium.webp">
+            <img src="images/salta-hero-small.webp" alt="A photo of a landscape in Salta, Ghana">
+        </picture>
+        <section class="card data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Country:</th>
+                    <td>Ghana</td>
+                </tr>
+                <tr>
+                    <th>Area:</th>
+                    <td>238,535 km²</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>34,000,000 (2024)</td>
+                </tr>
+                <tr>
+                    <th>Country:</th>
+                    <td>Ghana</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Accra</td>
+                </tr>
+                <tr>
+                    <th>Funded:</th>
+                    <td>1957</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Ghanaian cedis</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC 0</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+233</td>
+                </tr>
+            </table>
+            
+        </section>
+        <section class="card temp">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="A drawing of the sun with clouds." width="100">
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td><span id="current-temp">9</span>&deg; C</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Sunny</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td><span id="windspeed">13</span> km/h</td>
+                </tr>
+                <tr>
+                    <th>Windchill:</th>
+                    <td><span id="windchill"></span></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Amemawu Eric | Ho, Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
